@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    first_char = sentence[0]
-    length = len(sentence)
     tupl = ()
-    if length == 0:
+    if len(sentence) == 0:
         tupl = 0, "None"
     else:
-        tupl = length, first_char
+        tupl = len(sentence), sentence[0]
     return tupl
