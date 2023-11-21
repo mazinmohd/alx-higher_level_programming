@@ -7,7 +7,8 @@ class Square:
 
     def __init__(slef, size=0):
         """
-        Args and size
+        Args:
+            size: size of square
         """
 
         if type(size) is int:
