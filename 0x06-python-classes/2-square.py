@@ -1,14 +1,16 @@
 #!/usr/bin/python3
-"""initalize class"""
+
+"""Define a class Square"""
 
 
 class Square:
-    """class with private instance"""
+    """Represent a square"""
 
     def __init__(slef, size=0):
-        """
+        """Initialize a new square.
+        
         Args:
-            size: size of square
+            size (int): size of square
         """
 
         if not isinstance(size, int):
