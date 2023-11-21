@@ -3,7 +3,7 @@
 
 
 class Square:
-    """ a square class 
+    """ a square class
     Attributes:
     __size (int): size of a side of the square
     """
