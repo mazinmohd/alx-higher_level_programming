@@ -57,7 +57,7 @@ class Rectangle:
         return new list
         """
         if self.__width == 0 or self.__height == 0:
-            return("")
+            return ("")
 
         my_list = []
         for i in range(self.__height):
