@@ -4,6 +4,9 @@
 
 class Rectangle:
     """Rectangle class"""
+
+    count = 0
+
     def __init__(self, width=0, height=0):
         """init method
 
@@ -11,6 +14,7 @@ class Rectangle:
             width (int): the width
             height (int): the height
         """
+        type(self).count += 1
         self.width = width
         self.height = height
 
@@ -77,5 +81,5 @@ class Rectangle:
     def __del__(self):
         """print a message
         """
-        type(self).number_of_instance -= 1
+        type(self).count -= 1
         print("Bye rectangle...")
