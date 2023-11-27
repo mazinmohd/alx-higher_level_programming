@@ -54,6 +54,7 @@ class Rectangle:
 
     def __str__(self):
         """printable the rectangle with #
+        return new list
         """
         if self.__width == 0 or self.__height == 0:
             return("")
