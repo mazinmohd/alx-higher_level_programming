@@ -66,7 +66,8 @@ NameError: name 'my_list2' is not defined
 
 Case 8:
 
->>> new_list = [1, 1, 1, 1]
->>> my_list = MyList(new_list)
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(1)
 >>> my_list.print_sorted()
-[1, 1, 1, 1]
+[1, 1]
