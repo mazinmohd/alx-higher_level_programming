@@ -40,3 +40,12 @@ Case 4:
 >>> my_list = MyList(a)
 >>> my_list.print_sorted()
 []
+
+Case 5:
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.print_sorted()
+[1]
+>>> print(my_list)
+[1]
