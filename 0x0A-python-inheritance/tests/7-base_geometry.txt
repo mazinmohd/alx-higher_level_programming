@@ -1,0 +1,49 @@
+Using ``BaseGeometry``
+--------------------
+
+Importing:
+
+	>>> BaseGeometry= __import__('7-base_geometry').BaseGeometry
+
+Case 1:
+
+	>>> bg = BaseGeometry()
+	>>> bg.area()
+	Traceback (most recent call last):
+		...
+	Exception: area() is not implemented
+
+Case 2:
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("name", "5")
+	Traceback (most recent call last):
+		...
+	TypeError: name must be an integer
+
+Case 3:
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("name", True)
+	Traceback (most recent call last):
+		...
+	TypeError: name must be an integer
+
+Case 4:
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("name", -5)
+	Traceback (most recent call last):
+		...
+	ValueError: name must be greater than 0
+
+
+Case 5:
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("name", 0)
+	Traceback (most recent call last):
+		...
+	ValueError: name must be greater than 0
+
+Case 6:
