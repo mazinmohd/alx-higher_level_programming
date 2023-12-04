@@ -33,3 +33,10 @@ Case 3:
 >>> my_list = MyList(a)
 >>> my_list.print_sorted()
 [1, 4, 9]
+
+Case 4:
+
+>>> a = []
+>>> my_list = MyList(a)
+>>> my_list.print_sorted()
+[]
