@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Declaration to function"""
-import json
 
 
 def class_to_json(obj):
