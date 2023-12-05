@@ -18,7 +18,7 @@ class Student:
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
 
-    def reloat_from_json(self, json):
+    def reload_from_json(self, json):
         """Reloat from json"""
         for i, j in json.items():
             setattr(self, i, j)
