@@ -36,7 +36,7 @@ class Square(Rectangle):
                 elif i == 3:
                     self.y = arg
                 i += 1
-    
+
         elif kwargs and len(kwargs) != 0:
             for key, value in kwargs.items():
                 if key == "id":
@@ -62,4 +62,5 @@ class Square(Rectangle):
 
     def __str__(self):
         """Str method"""
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
+        return "[Square] ({}) {}/{} - {}".format(self.id,
+                                                 self.x, self.y, self.width)
